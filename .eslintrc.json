@@ -26,5 +26,7 @@
         "react"
     ],
     "rules": {
+        "no-mixed-spaces-and-tabs":"off",
+        "naming-convention": "none"
     }
 }

@@ -17,6 +17,7 @@
     "@mui/joy": "^5.0.0-beta.15",
     "@mui/material": "^5.14.18",
     "@reduxjs/toolkit": "^1.9.7",
+    "2gis-maps": "^3.7.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.3",

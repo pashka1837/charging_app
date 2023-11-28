@@ -5,7 +5,7 @@ import Landing from './Pages/Landing';
 import {CssVarsProvider} from '@mui/joy';
 import {Provider} from 'react-redux';
 import {store} from './store';
-import theme from './utils/theme';
+import theme from './utils/theme.js';
 const router = createBrowserRouter([
 	{path: '/',
 		element: <HomeLayout />,

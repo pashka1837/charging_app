@@ -4,14 +4,37 @@
   margin: 0;
   padding: 0;
 }
-
+.landing,
 .inputs {
+  grid-template-columns: 1fr;
   display: grid;
   gap: 30px;
+  justify-content: center;
 }
 
-.result {
-}
 body {
   background-color: #48ada4;
+}
+
+.estimateContainer {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 10px;
+}
+
+.estimateCalcs {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr;
+  align-content: space-around;
+  justify-items: start;
+  /* align-items: center; */
+}
+.estimateTime {
+  display: grid;
+  text-align: start;
+  width: 100%;
+  border: 1px solid #48ada4;
+  border-radius: 10px;
+  padding: 3%;
 }

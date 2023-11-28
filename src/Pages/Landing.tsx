@@ -1,27 +1,27 @@
-/* eslint-disable no-mixed-spaces-and-tabs */
 import {Box} from '@mui/joy';
-import {useSelector} from 'react-redux';
-import {type RootState} from '../store';
-import {type TUnits} from '../types/types';
 import MyInput from '../Components/MyInput/MyInput';
 import EndOfChargeCard from '../Components/EndOfChargeCard/EndOfChargeCard';
+import {type TInputProps, inputsAr} from '../data/inputsProps';
 
-export default function Landing() {
-	const state = useSelector((store: RootState) => (store.dataInfo));
-	const inpValues = Object.entries(state);
+import Map from '../Components/Map/Map';
+
+
+
+export default  function Landing() {
+
 
 	return (
-		<Box sx={{p: '5% 10%'}}>
+		<Box className='landing' sx={{p: '5% 10%'}}>
 			<EndOfChargeCard/>
-
 			<Box className='inputs'>
-				{inpValues.map((ar: [string, TUnits]) => (
+				{inputsAr.map((inputProp: TInputProps) => (
 					<MyInput
-						key={ar[0]}
-						name={ar[0]}
-						{...ar[1]} />
+						key={inputProp.name}
+						{...inputProp} />
 					 ))}
 			</Box>
+			<Map />
 		</Box>
 	);
 }
+
